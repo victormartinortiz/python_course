@@ -1,4 +1,4 @@
-#!/media/datos/Documentos/projects/curso-python/web_scraping/venv/bin/python3
+#!/media/datos/Documentos/projects/curso-python/web_scraping/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

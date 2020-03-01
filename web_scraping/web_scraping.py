@@ -1,10 +1,11 @@
-import requests
-from bs4 import BeautifulSoup
 import urllib
-
+import ssl
+import requests
+import lxml
+from bs4 import BeautifulSoup
 
 def run():
-	for i in range(1,21):
+	for i in range(21,31):
 		response = requests.get('https://xkcd.com/{}'.format(i))
 		soup = BeautifulSoup(response.content, 'lxml')
 		image_container = soup.find(id='comic')
