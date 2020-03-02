@@ -7,5 +7,5 @@ def hello_world():
 	return 'Hello, software engineer graduated from Platzi!'
 
 
-if __name__ == "__main___":
+if __name__ == "__main__":
 	app.run()
