@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, flash, redirect
 from contact_model import Contact
 from google.cloud import ndb
 app = Flask(__name__)
-app.secret_key='some_very_secret'
 
 client = ndb.Client()
 
@@ -39,8 +38,4 @@ def delete_contact():
         return redirect('/contacts/{}'.format(contact.key.id()))
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     app.run(host='127.0.0.1', port=8080, debug=True)
-=======
-	app.run()
->>>>>>> e7cb2bf1083672b8a2a70054736e4093f03e4ffb
